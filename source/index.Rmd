@@ -63,8 +63,8 @@ div(flipdown(downto = paste(year, month, day, sep="-"), id = "Christmas"), align
 
 ```{r, echo = FALSE}
 
-month = 09
-day  = 17
+month = 01
+day  = 23
 
 year = get_righ_year(month, day)
 
