@@ -1,0 +1,75 @@
+---
+title: "My Countdowns"
+
+output: html_document
+---
+
+<style type="text/css">
+
+h1.title {
+font-size: 38px;
+color: DarkRed;
+text-align: center;
+}
+
+h1 {
+font-size: 25px;
+text-align: center;
+}
+
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo = FALSE}
+require(flipdownr)
+require(htmltools)
+```
+
+
+```{r, echo=FALSE}
+get_righ_year <- function(month, day) {
+  if (as.numeric(format(Sys.Date(), "%m")) > month) {
+    return(as.numeric(format(Sys.Date(), "%Y")) + 1) 
+  } 
+  else if ((as.numeric(format(Sys.Date(), "%m")) == month) & (as.numeric(format(Sys.Date(), "%d")) >= day)) {
+    return(as.numeric(format(Sys.Date(), "%Y")) + 1)
+  } 
+  else {
+    return(format(Sys.Date(), "%Y"))
+  }
+}
+```
+
+# UNTILL 🎅
+
+
+```{r, echo = FALSE}
+month = 12
+day  = 25
+
+year = get_righ_year(month, day)
+
+
+div(flipdown(downto = paste(year, month, day, sep="-"), id = "Christmas"), align="center")
+```
+
+---
+
+# UNTILL 🎂
+
+
+```{r, echo = FALSE}
+
+month = 09
+day  = 17
+
+year = get_righ_year(month, day)
+
+div(flipdown(downto = paste(year, month, day, sep="-"), id = "birthday"), align="center")
+```
+
+---
+

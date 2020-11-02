@@ -1,0 +1,7 @@
+name: "Countdown to Christmas"
+output_dir: "../docs"
+include: ['.nojekyll']
+output:
+  prettydoc::html_pretty:
+    theme: tactile
+    highlight: github
