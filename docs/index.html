@@ -11,7 +11,7 @@
 
 
 
-<title>My Countdowns</title>
+<title>Compte à rebours</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -189,7 +189,7 @@ summary {
 
 
 
-<h1 class="title toc-ignore">My Countdowns</h1>
+<h1 class="title toc-ignore">Compte à rebours</h1>
 
 </div>
 
@@ -208,8 +208,8 @@ text-align: center;
 }
 
 </style>
-<div id="untill" class="section level1">
-<h1>UNTILL 🎅</h1>
+<div id="noël" class="section level1">
+<h1>Noël 🎅</h1>
 <div align="center">
 <div id="Christmas" class="flipdown"></div>
 <script>
@@ -234,13 +234,13 @@ const flipdown_Christmas = new FlipDown(  1608850800, 'Christmas',{
 </div>
 <hr />
 </div>
-<div id="untill-1" class="section level1">
-<h1>UNTILL 🎂</h1>
+<div id="fin-de-lécole" class="section level1">
+<h1>Fin de l’école</h1>
 <div align="center">
-<div id="birthday" class="flipdown"></div>
+<div id="End_School" class="flipdown"></div>
 <script>
 // Set up FlipDown
-const flipdown_birthday = new FlipDown(  1611356400, 'birthday',{
+const flipdown_End_School = new FlipDown(  1611270000, 'End_School',{
 
   theme: 'dark',
 
@@ -259,6 +259,31 @@ const flipdown_birthday = new FlipDown(  1611356400, 'birthday',{
 </script>
 </div>
 <hr />
+</div>
+<div id="déménagement" class="section level1">
+<h1>Déménagement</h1>
+<div align="center">
+<div id="New_Life" class="flipdown"></div>
+<script>
+// Set up FlipDown
+const flipdown_New_Life = new FlipDown(  1611529200, 'New_Life',{
+
+  theme: 'dark',
+
+  headings: ["Days","Hours","Minutes","Seconds"],
+
+})
+
+  // Start the countdown
+  .start()
+
+  // Do something when the countdown ends
+  .ifEnded(() => {
+    console.log('The countdown has ended!');
+  });
+
+</script>
+</div>
 </div>
 
 
