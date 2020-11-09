@@ -1,5 +1,5 @@
 ---
-title: "My Countdowns"
+title: "Compte à rebours"
 
 output: html_document
 ---
@@ -43,7 +43,7 @@ get_righ_year <- function(month, day) {
 }
 ```
 
-# UNTILL 🎅
+# Noël 🎅
 
 
 ```{r, echo = FALSE}
@@ -58,18 +58,30 @@ div(flipdown(downto = paste(year, month, day, sep="-"), id = "Christmas"), align
 
 ---
 
-# UNTILL 🎂
+# Fin de l'école
 
 
 ```{r, echo = FALSE}
 
 month = 01
-day  = 23
+day  = 22
 
 year = get_righ_year(month, day)
 
-div(flipdown(downto = paste(year, month, day, sep="-"), id = "birthday"), align="center")
+div(flipdown(downto = paste(year, month, day, sep="-"), id = "End_School"), align="center")
 ```
 
 ---
 
+# Déménagement
+
+
+```{r, echo = FALSE}
+
+month = 01
+day  = 25
+
+year = get_righ_year(month, day)
+
+div(flipdown(downto = paste(year, month, day, sep="-"), id = "New_Life"), align="center")
+```
